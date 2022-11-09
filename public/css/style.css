@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.firstPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width:100%;
+    height: 100vh;
+    color: white;
+    background-color: #005458;
+}
+.firstPage img{
+    width: 45%;
+}
+.firstPage .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+.firstPage .buttons button{
+    font-size: 20px;
+    padding: 13px;
+}
+.firstPage .name h1 span{
+    color: #0fc9d3;
+}
+.name h1{
+    font-size: 40px ;
+}
+.firstPage .name h1:nth-child(1){
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.firstPage .name h1:nth-child(1)::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: white;
+}
+
+/* From uiverse.io by @nikk7007 */
+button {
+    padding: 13px;
+    border: 1px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 350%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 110%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+#About-b{
+    border-color: gold;
+    color: gold;
+}
+#About-b::before{
+    background-color: gold;
+}
+#About-b:hover{
+    color: #fff ;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #005458;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: 0.2s;
+    border-radius: 1.5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+@media screen and (max-width: 1000px) {
+    .firstPage {
+      flex-direction: column-reverse;
+      gap:50px;
+    }
+    .firstPage img{
+        width: 60%;
+    }
+    .buttons button{
+        font-size: 16px;
+    }
+    .name h1{
+        font-size:  5.856515373352855vw;
+        text-align: center;
+    }
+    .name h1:nth-child(1)::after{
+        display: none;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .firstPage .buttons{
+        margin-top: 40px;
+        gap:25px;
+    }
+  }
+
+@media screen and (max-width:800px) {
+    .firstPage{
+        min-height: 800px4
+        ;
+    }
+}
+.social-icons{
+    position: absolute;
+    top: 20px;
+    left:20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:20px;
+}
+.icons{
+    transition: 0.4s;
+    color: white;
+}
+.social-icons .icons:hover{
+    color:var(--color);
+    
+}

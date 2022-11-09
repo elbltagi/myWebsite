@@ -1,0 +1,85 @@
+.page-3{
+    height: 100vh ;
+    width: 100%;
+    background-color: #005458;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-3 .inputs{
+    background-color: rgba(255,255,255,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 550px;
+    gap:25px;
+    border-radius: 7px;
+    border-radius: 12px;
+    border-radius: 12px;
+    background: #005458;
+    box-shadow:  5px 5px 10px #004649,
+                 -5px -5px 10px #006267;
+}
+.page-3 .inputs input{
+    width: 80%;
+    height: 45px;
+    outline: none;
+    border: none;
+    position: relative;
+    padding: 4px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color:#17C3B2;
+    border-radius: 8px;
+    transition: 0.5s;
+    background: #005458;
+    box-shadow: inset 5px 5px 10px #004447,
+                inset -5px -5px 10px #006469;
+}
+.inputs input:focus,.inputs textarea:focus{
+    box-shadow:  5px 5px 10px #004447,
+    -5px -5px 10px #006469;
+    transform: scale(1.05);
+}
+.inputs textarea{
+    resize: none;
+    width: calc(80% - 10px);
+    padding: 10px;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    border-radius: 8px;
+    color:#17C3B2;
+    transition: 0.5s;
+    background: #005458;
+    box-shadow: inset 5px 5px 10px #004447,
+                inset -5px -5px 10px #006469;
+}
+.inputs .input-t{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputs button{
+    font-size: 17px;
+    width: 120px;
+    height: 55px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #005a5e, #004c4f);
+    box-shadow:  5px 5px 10px #004447,
+                -5px -5px 10px #006469;
+    border: none;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+   .page-3 .inputs{
+        box-shadow: none;
+        width:100%;
+   } 
+}

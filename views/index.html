@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Youssef Elbltagi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page-2.css">
+    <link rel="stylesheet" href="css/page-3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous"></script>
+    <script src="js/java.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+<body>
+    <div class="firstPage">
+        <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com/yousef.salah.756412"><i class="fa fa-facebook-square fa-3x icons" style="--color:rgb(84, 132, 223)" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.instagram.com/youssefelbltagi"><i class="fa fa-instagram fa-3x icons" style="--color:rgb(165, 38, 204)" aria-hidden="true"></i></a>
+        </div>
+        <div class="name">
+            <h1>HELLO</h1>
+            <h1>I AM <span> YOUSSEF SALAH ELBLTGI</span></h1>
+            <h1><span style="color: gold;"> SEMI-SENIOR</span> REACT <span style="color: rgb(202, 91, 0);">DEVELOPER</span></h1>
+            <div class="buttons">
+                <button onclick="Contact()">Contact Me</button>
+                <button id="About-b" onclick="About()">About Me</button>
+            </div>
+        </div>
+        <img src="images/undraw_coding_re_iv62.svg" alt="developer">
+    </div>
+    <div class="page-2" id="page-2">
+            <div class="p1">
+            <div class="about">
+                <img src="images/IMG-20220908-WA00075.jpg" alt="my photo">
+                <h1>About Me</h1>
+                <br/>
+                <p>I am Youssef Salah Elbltagi, I am 15 years old,<br/>
+I am a full stack developer, I can code in any language you want.
+I have experience with many technologies and I am always open to new ones.<br/>
+I'm a simple React developer with over 2 years of experience, who likes to build things that work!
+                </p>
+            </div>
+            <button onclick="Contact()">Contact Me</button>
+        </div>
+        <img id="my-image" src="images/IMG-20220908-WA00075.jpg" alt="my photo">
+
+    </div>
+    <div class="page-3" id="page-3">
+        <form action="/sendemail" method="post" class="inputs">
+            <div class="input-t">
+                <input type="text" class="input" required placeholder="Full Name" autocomplete="off" id="name" name="name">
+            </div>
+            <div class="input-t">
+                <input type="email" class="input" required placeholder="Email" autocomplete="off" id="email" name="email">
+            </div>
+            <div class="input-t">
+                <input type="text" class="input" required placeholder="Subject" autocomplete="off" id="subject" name="subject">
+            </div>
+            <textarea placeholder="Enter your message" required name="message" id="message"></textarea>
+            <button >Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
